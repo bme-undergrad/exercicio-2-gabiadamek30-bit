@@ -1,4 +1,4 @@
-function [blendA, blendB] = exercicio2(3)
+function [blendA, blendB] = exercicio2(NG)
 
 % NG: numero do grupo
 
@@ -23,7 +23,7 @@ A = [-0.3,-0.2;
 b = [-15;-10;-12;20;50];
 
 x_min_valores = zeros(2,1);
-x_max_valores = 1000 * ones(2,1);
+x_max_valores = 1000*ones(2,1);
 x = linprog(f,A,b);
 
 blendA = x(1);
